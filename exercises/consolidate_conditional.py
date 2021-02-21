@@ -12,16 +12,17 @@ def pour(liquid):
     print('poured', liquid + '.',)
 
 def make_shirazi_salad(ingredients):
-    if 'cucumber' not in ingredients:
+    possible = ['cucumber', 'tomato', 'onion', 'lemon juice']
+    if possible not in ingredients:
         print('lacks ingredients.')
         return
-    if 'tomato' not in ingredients:
+    if possible not in ingredients:
         print('lacks ingredients.')
         return
-    if 'onion' not in ingredients:
+    if possible not in ingredients:
         print('lacks ingredients.')
         return
-    if 'lemon juice' not in ingredients:
+    if possible not in ingredients:
         print('lacks ingredients.')
         return
     dice(ingredients)

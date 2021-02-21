@@ -9,7 +9,10 @@ def backdoor_srcmethod():
         inputfile = input('APK to Backdoor: ').strip()
         if inputfile == '':
             running = False
+            continue
         else:
             print('doing other stuff.') 
+            continue
+        continue
 
 backdoor_srcmethod()

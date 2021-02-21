@@ -9,6 +9,9 @@ with open('foobar.file', 'rb') as fp:
         chunk = fp.read(n)
         if chunk == '': # end of file, stop running.
             running = False
+            break
         else:
             print(chunk)
+            break
+        continue
         # process(chunk)

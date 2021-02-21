@@ -6,7 +6,7 @@ def find_food(food, fridge):
         if food in item:
             found = True
             item_name = item
-            break
+            continue
     if found:
         return item_name
     else:
